@@ -13,6 +13,10 @@ struct process
 };
 bool compare(process a, process b)
 {
+    if(a.remain == b.remain)
+    {
+        return a.id > b.id;
+    }
     return a.remain > b.remain;
 }
 int main()
